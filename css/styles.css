@@ -757,11 +757,14 @@ a:visited {
 }
 
 .modal {
-  width: 408px;
-  min-height: 584px;
+  /* width: 408px; */
+  width: 288px;
+  /* min-height: 584px; */
+  min-height: 623px;
   border-radius: 4px;
   background-color: #fcfcfc;
-  padding: 72px 24px 24px 24px;
+  /* padding: 72px 24px 24px 24px; */
+  padding: 72px 16px 16px 16px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -921,7 +924,7 @@ a:visited {
 .modal-checkbox-block {
   width: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   margin-bottom: 24px;
@@ -931,20 +934,23 @@ a:visited {
   font-family: Roboto;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 4%;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: #8e8f99;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-checkbox-label .modal-checkbox-link {
-  font-family: Roboto;
-  font-weight: 400;
   font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 4%;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   text-decoration: underline;
   text-decoration-style: solid;
   color: #4d5ae5;
+  display: block;
 }
 
 .modal-checkbox {
@@ -954,7 +960,7 @@ a:visited {
   border-radius: 2px;
   margin-right: 8px;
   fill: transparent;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
@@ -975,13 +981,6 @@ a:visited {
 
 .modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox {
   fill: #f4f4fd;
-}
-
-.modal-checkbox-label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
 }
 
 .modal-button {
