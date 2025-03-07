@@ -1255,4 +1255,19 @@ a:visited {
     width: 100%;
     text-align: start;
   }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  .modal-checkbox-label {
+    width: 100%;
+    justify-content: start;
+  }
+
+  .modal-checkbox-label .modal-checkbox-link {
+    display: inline;
+  }
 }
