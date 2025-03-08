@@ -71,10 +71,7 @@ button {
 .header-navigation {
   width: 100%;
   /* width: 50%; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+  display: none;
 }
 
 ul,
@@ -141,10 +138,7 @@ a:visited {
 
 .address-menu {
   text-decoration: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
+  display: none;
   gap: 40px;
 }
 
@@ -199,6 +193,16 @@ a:visited {
     url(../images/hero_img.jpg);
   max-width: 1440px;
   margin: 0 auto;
+}
+
+@media (min-resolution: 192dpi) {
+  .preview {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero_img@2x.jpg);
+  }
 }
 
 .preview-title {
